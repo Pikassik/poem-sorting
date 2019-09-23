@@ -1,0 +1,71 @@
+\hypertarget{classtext_1_1Text}{}\section{text\+:\+:Text Class Reference}
+\label{classtext_1_1Text}\index{text\+::\+Text@{text\+::\+Text}}
+
+
+Class for reading text from file, parsing it to strings and owning.  
+
+
+
+
+{\ttfamily \#include $<$Text.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classtext_1_1Text_a01085c36a7d94374043d20b7be2cfab1}{Read\+Poem} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em reads file Opens file, allocates memory for chars, reads into ram and parses into strings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtext_1_1Text_ac301f67b075febf7ef8d8dfb39c5fc7f}\label{classtext_1_1Text_ac301f67b075febf7ef8d8dfb39c5fc7f}} 
+void \hyperlink{classtext_1_1Text_ac301f67b075febf7ef8d8dfb39c5fc7f}{Print\+Poem} ()
+\begin{DoxyCompactList}\small\item\em prints text from buffer to stdout \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classtext_1_1Text_a93696ba617d1c9abb3588f8e50568d82}\label{classtext_1_1Text_a93696ba617d1c9abb3588f8e50568d82}} 
+void \hyperlink{classtext_1_1Text_a93696ba617d1c9abb3588f8e50568d82}{Print\+Raw\+Poem} ()
+\begin{DoxyCompactList}\small\item\em prints raw file content \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string\+\_\+view $>$\+::iterator \hyperlink{classtext_1_1Text_afc03e19cf74bd07cb0dda78e321b974e}{Begin} ()
+\item 
+std\+::vector$<$ std\+::string\+\_\+view $>$\+::iterator \hyperlink{classtext_1_1Text_ab02329afe5da1faca91732bd880dea3b}{End} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for reading text from file, parsing it to strings and owning. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classtext_1_1Text_afc03e19cf74bd07cb0dda78e321b974e}\label{classtext_1_1Text_afc03e19cf74bd07cb0dda78e321b974e}} 
+\index{text\+::\+Text@{text\+::\+Text}!Begin@{Begin}}
+\index{Begin@{Begin}!text\+::\+Text@{text\+::\+Text}}
+\subsubsection{\texorpdfstring{Begin()}{Begin()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string\+\_\+view $>$\+::iterator text\+::\+Text\+::\+Begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+iterator to begin of string buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtext_1_1Text_ab02329afe5da1faca91732bd880dea3b}\label{classtext_1_1Text_ab02329afe5da1faca91732bd880dea3b}} 
+\index{text\+::\+Text@{text\+::\+Text}!End@{End}}
+\index{End@{End}!text\+::\+Text@{text\+::\+Text}}
+\subsubsection{\texorpdfstring{End()}{End()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string\+\_\+view $>$\+::iterator text\+::\+Text\+::\+End (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+iterator to end of string buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classtext_1_1Text_a01085c36a7d94374043d20b7be2cfab1}\label{classtext_1_1Text_a01085c36a7d94374043d20b7be2cfab1}} 
+\index{text\+::\+Text@{text\+::\+Text}!Read\+Poem@{Read\+Poem}}
+\index{Read\+Poem@{Read\+Poem}!text\+::\+Text@{text\+::\+Text}}
+\subsubsection{\texorpdfstring{Read\+Poem()}{ReadText()}}
+{\footnotesize\ttfamily void text\+::\+Text\+::\+Read\+Poem (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+reads file Opens file, allocates memory for chars, reads into ram and parses into strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & file name to read \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{Text_8h}{Text.\+h}\item 
+Text.\+cpp\end{DoxyCompactItemize}

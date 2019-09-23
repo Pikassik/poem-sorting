@@ -1,0 +1,39 @@
+\hypertarget{ReadSortAndPrint_8h}{}\section{Read\+Sort\+And\+Print.\+h File Reference}
+\label{ReadSortAndPrint_8h}\index{Read\+Sort\+And\+Print.\+h@{Read\+Sort\+And\+Print.\+h}}
+
+
+contains one function which reads file, sortes it and prints in stdin  
+
+
+{\ttfamily \#include $<$Text.\+h$>$}\newline
+{\ttfamily \#include $<$Text\+Sort.\+h$>$}\newline
+Include dependency graph for Read\+Sort\+And\+Print.\+h\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ReadSortAndPrint_8h_a0504ab666e4d9a29abaed456ff1801de}{Read\+Sort\+And\+Print} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em reads file, sortes it and prints in stdin Creates Text object which reads file, uses functions from Text\+Sort to sort it prints it sorted then backsorted and then raw. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+contains one function which reads file, sortes it and prints in stdin 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ReadSortAndPrint_8h_a0504ab666e4d9a29abaed456ff1801de}\label{ReadSortAndPrint_8h_a0504ab666e4d9a29abaed456ff1801de}} 
+\index{Read\+Sort\+And\+Print.\+h@{Read\+Sort\+And\+Print.\+h}!Read\+Sort\+And\+Print@{Read\+Sort\+And\+Print}}
+\index{Read\+Sort\+And\+Print@{Read\+Sort\+And\+Print}!Read\+Sort\+And\+Print.\+h@{Read\+Sort\+And\+Print.\+h}}
+\subsubsection{\texorpdfstring{Read\+Sort\+And\+Print()}{ReadSortAndPrint()}}
+{\footnotesize\ttfamily void Read\+Sort\+And\+Print (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+
+
+reads file, sortes it and prints in stdin Creates Text object which reads file, uses functions from Text\+Sort to sort it prints it sorted then backsorted and then raw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & file name to operate with \\
+\hline
+\end{DoxyParams}
