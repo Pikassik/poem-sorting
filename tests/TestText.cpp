@@ -27,7 +27,7 @@ struct TestText : public ::testing::Test {
 };
 
 TEST_F(TestText, ReadInput0) {
-  text.ReadText("tests/input0");
+  text.ReadText("../tests/input0");
   EXPECT_EQ(GetStrings()[0], "abcdefgh");
   EXPECT_EQ(GetStrings()[1], "ijklmnopq");
   EXPECT_EQ(GetStrings()[2], "rstuvwxyz");
@@ -35,13 +35,13 @@ TEST_F(TestText, ReadInput0) {
 }
 
 TEST_F(TestText, SizeInput0) {
-  text.ReadText("tests/input0");
+  text.ReadText("../tests/input0");
   EXPECT_EQ(GetSize(), 29);
   EXPECT_EQ(GetStrings().size(), 3);
 }
 
 TEST_F(TestText, EndZeroInput0) {
-  text.ReadText("tests/input0");
+  text.ReadText("../tests/input0");
   EXPECT_EQ(GetPtr()[GetSize() - 1], '\0');
 }
 
@@ -66,19 +66,19 @@ TEST_F(TestText, ReadInput1) {
       "9",
   };
 
-  text.ReadText("tests/input1");
+  text.ReadText("../tests/input1");
   for (size_t i = 0; i < content.size(); ++i) {
     EXPECT_EQ(content[i], GetStrings()[i]);
   }
 }
 
 TEST_F(TestText, SizeInput1) {
-  text.ReadText("tests/input1");
+  text.ReadText("../tests/input1");
   EXPECT_EQ(GetSize(), 27);
   EXPECT_EQ(GetStrings().size(), 17);
 }
 
 TEST_F(TestText, EndZeroInput1) {
-  text.ReadText("tests/input1");
+  text.ReadText("../tests/input1");
   EXPECT_EQ(GetPtr()[GetSize() - 1], '\0');
 }

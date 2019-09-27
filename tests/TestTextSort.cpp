@@ -28,7 +28,7 @@ struct TestTextSort : public ::testing::Test {
 };
 
 TEST_F(TestTextSort, SortInput2) {
-  text.ReadText("tests/input2");
+  text.ReadText("../tests/input2");
   auto std_sorted = GetStrings();
   std::sort(std_sorted.begin(), std_sorted.end());
   text::SortTextLexicographically(text);
@@ -36,7 +36,7 @@ TEST_F(TestTextSort, SortInput2) {
 }
 
 TEST_F(TestTextSort, BackSortInput2) {
-  text.ReadText("tests/input2");
+  text.ReadText("../tests/input2");
   std::vector<std::string> std_sorted;
   for (const auto& x: GetStrings()) {
     std_sorted.emplace_back(std::string(x));
