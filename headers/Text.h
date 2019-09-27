@@ -38,12 +38,12 @@ class Text {
   /*!
    * @brief prints text from buffer to stdout
    */
-  void PrintText();
+  void PrintText() const;
 
   /*!
    * @brief prints raw file content
    */
-  void PrintRawText();
+  void PrintRawText() const;
 
   /*!
    * @return iterator to begin of string buffer

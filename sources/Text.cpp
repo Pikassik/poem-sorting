@@ -23,7 +23,7 @@ void Text::ReadText(const std::string& filename) {
 
 }
 
-void Text::PrintText() {
+void Text::PrintText() const {
   for (const auto& poem_string: strings_) {
     if (!poem_string.empty()) {
       std::puts(poem_string.data());
@@ -31,7 +31,7 @@ void Text::PrintText() {
   }
 }
 
-void Text::PrintRawText() {
+void Text::PrintRawText() const {
   for (size_t i = 0; i < text_size_; ++i) {
     std::putchar(text_[i] == '\0' ? '\n' : text_[i]);
   }
