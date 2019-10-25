@@ -37,6 +37,14 @@ void Text::PrintRawText() const {
   }
 }
 
+const std::string_view& Text::Data(size_t index) const {
+  return strings_[index];
+}
+
+size_t Text::Size() const {
+  return strings_.size();
+}
+
 std::vector<std::string_view>::iterator Text::Begin() {
   return strings_.begin();
 }

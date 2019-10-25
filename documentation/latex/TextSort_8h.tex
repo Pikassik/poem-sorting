@@ -1,0 +1,136 @@
+\hypertarget{TextSort_8h}{}\section{headers/\+Text\+Sort.h File Reference}
+\label{TextSort_8h}\index{headers/\+Text\+Sort.\+h@{headers/\+Text\+Sort.\+h}}
+
+
+header with functions which sorts strings in Text object  
+
+
+{\ttfamily \#include $<$string\+\_\+view$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$headers/\+Text.\+h$>$}\newline
+Include dependency graph for Text\+Sort.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{TextSort_8h_a70856cc515a82e58a2a31f803a858357}{text\+::\+Sort\+Text\+Lexicographically} (\hyperlink{classtext_1_1Text}{text\+::\+Text} \&text)
+\begin{DoxyCompactList}\small\item\em sorts text strings lexicographically \end{DoxyCompactList}\item 
+void \hyperlink{TextSort_8h_af8ac5b8771cdd9a43e161f8971c42ef9}{text\+::\+Sort\+Text\+Back\+Lexicographically} (\hyperlink{classtext_1_1Text}{text\+::\+Text} \&text)
+\begin{DoxyCompactList}\small\item\em sorts text strings back lexicographically \end{DoxyCompactList}\item 
+bool \hyperlink{TextSort_8h_a665dc65194eb138600fa3b75360be653}{text\+::privatefunctions\+::\+String\+Lexicographically\+Cmp} (const std\+::string\+\_\+view \&lhvalue, const std\+::string\+\_\+view \&rhvalue)
+\begin{DoxyCompactList}\small\item\em compares two strings lexicographically \end{DoxyCompactList}\item 
+bool \hyperlink{TextSort_8h_a7c1528a3b6adb31dae5a72db018f7d49}{text\+::privatefunctions\+::\+String\+Back\+Lexicographically\+Cmp} (const std\+::string\+\_\+view \&lhvalue, const std\+::string\+\_\+view \&rhvalue)
+\begin{DoxyCompactList}\small\item\em compares two strings back lexicographically \end{DoxyCompactList}\item 
+{\footnotesize template$<$class Iter $>$ }\\bool \hyperlink{TextSort_8h_a7622bf301bdcc1b15c35c5c3eab31594}{text\+::privatefunctions\+::\+String\+Iterator\+Cmp} (Iter left\+\_\+it, Iter left\+\_\+end, Iter right\+\_\+it, Iter right\+\_\+end)
+\begin{DoxyCompactList}\small\item\em compares strings\textquotesingle{} iterators \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+header with functions which sorts strings in Text object 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{TextSort_8h_file_af8ac5b8771cdd9a43e161f8971c42ef9}\label{TextSort_8h_file_af8ac5b8771cdd9a43e161f8971c42ef9}} 
+\index{Text\+Sort.\+h@{Text\+Sort.\+h}!Sort\+Text\+Back\+Lexicographically@{Sort\+Text\+Back\+Lexicographically}}
+\index{Sort\+Text\+Back\+Lexicographically@{Sort\+Text\+Back\+Lexicographically}!Text\+Sort.\+h@{Text\+Sort.\+h}}
+\subsubsection{\texorpdfstring{Sort\+Text\+Back\+Lexicographically()}{SortTextBackLexicographically()}}
+{\footnotesize\ttfamily void text\+::\+Sort\+Text\+Back\+Lexicographically (\begin{DoxyParamCaption}\item[{\hyperlink{classtext_1_1Text}{text\+::\+Text} \&}]{text }\end{DoxyParamCaption})}
+
+
+
+sorts text strings back lexicographically 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & to be sorted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{TextSort_8h_file_a70856cc515a82e58a2a31f803a858357}\label{TextSort_8h_file_a70856cc515a82e58a2a31f803a858357}} 
+\index{Text\+Sort.\+h@{Text\+Sort.\+h}!Sort\+Text\+Lexicographically@{Sort\+Text\+Lexicographically}}
+\index{Sort\+Text\+Lexicographically@{Sort\+Text\+Lexicographically}!Text\+Sort.\+h@{Text\+Sort.\+h}}
+\subsubsection{\texorpdfstring{Sort\+Text\+Lexicographically()}{SortTextLexicographically()}}
+{\footnotesize\ttfamily void text\+::\+Sort\+Text\+Lexicographically (\begin{DoxyParamCaption}\item[{\hyperlink{classtext_1_1Text}{text\+::\+Text} \&}]{text }\end{DoxyParamCaption})}
+
+
+
+sorts text strings lexicographically 
+
+
+\begin{DoxyParams}{Parameters}
+{\em text} & to be sorted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{TextSort_8h_file_a7c1528a3b6adb31dae5a72db018f7d49}\label{TextSort_8h_file_a7c1528a3b6adb31dae5a72db018f7d49}} 
+\index{Text\+Sort.\+h@{Text\+Sort.\+h}!String\+Back\+Lexicographically\+Cmp@{String\+Back\+Lexicographically\+Cmp}}
+\index{String\+Back\+Lexicographically\+Cmp@{String\+Back\+Lexicographically\+Cmp}!Text\+Sort.\+h@{Text\+Sort.\+h}}
+\subsubsection{\texorpdfstring{String\+Back\+Lexicographically\+Cmp()}{StringBackLexicographicallyCmp()}}
+{\footnotesize\ttfamily bool text\+::privatefunctions\+::\+String\+Back\+Lexicographically\+Cmp (\begin{DoxyParamCaption}\item[{const std\+::string\+\_\+view \&}]{lhvalue,  }\item[{const std\+::string\+\_\+view \&}]{rhvalue }\end{DoxyParamCaption})}
+
+
+
+compares two strings back lexicographically 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhvalue} & \\
+\hline
+{\em rhvalue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lhvalue $<$ rhvalue 
+\end{DoxyReturn}
+\mbox{\Hypertarget{TextSort_8h_file_a7622bf301bdcc1b15c35c5c3eab31594}\label{TextSort_8h_file_a7622bf301bdcc1b15c35c5c3eab31594}} 
+\index{Text\+Sort.\+h@{Text\+Sort.\+h}!String\+Iterator\+Cmp@{String\+Iterator\+Cmp}}
+\index{String\+Iterator\+Cmp@{String\+Iterator\+Cmp}!Text\+Sort.\+h@{Text\+Sort.\+h}}
+\subsubsection{\texorpdfstring{String\+Iterator\+Cmp()}{StringIteratorCmp()}}
+{\footnotesize\ttfamily template$<$class Iter $>$ \\
+bool text\+::privatefunctions\+::\+String\+Iterator\+Cmp (\begin{DoxyParamCaption}\item[{Iter}]{left\+\_\+it,  }\item[{Iter}]{left\+\_\+end,  }\item[{Iter}]{right\+\_\+it,  }\item[{Iter}]{right\+\_\+end }\end{DoxyParamCaption})}
+
+
+
+compares strings\textquotesingle{} iterators 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em Iter} & iterator type \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em left\+\_\+it} & \\
+\hline
+{\em left\+\_\+end} & \\
+\hline
+{\em right\+\_\+it} & \\
+\hline
+{\em right\+\_\+end} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+left $<$ right 
+\end{DoxyReturn}
+\mbox{\Hypertarget{TextSort_8h_file_a665dc65194eb138600fa3b75360be653}\label{TextSort_8h_file_a665dc65194eb138600fa3b75360be653}} 
+\index{Text\+Sort.\+h@{Text\+Sort.\+h}!String\+Lexicographically\+Cmp@{String\+Lexicographically\+Cmp}}
+\index{String\+Lexicographically\+Cmp@{String\+Lexicographically\+Cmp}!Text\+Sort.\+h@{Text\+Sort.\+h}}
+\subsubsection{\texorpdfstring{String\+Lexicographically\+Cmp()}{StringLexicographicallyCmp()}}
+{\footnotesize\ttfamily bool text\+::privatefunctions\+::\+String\+Lexicographically\+Cmp (\begin{DoxyParamCaption}\item[{const std\+::string\+\_\+view \&}]{lhvalue,  }\item[{const std\+::string\+\_\+view \&}]{rhvalue }\end{DoxyParamCaption})}
+
+
+
+compares two strings lexicographically 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhvalue} & \\
+\hline
+{\em rhvalue} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+lhvalue $<$ rhvalue 
+\end{DoxyReturn}

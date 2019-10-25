@@ -45,6 +45,11 @@ class Text {
    */
   void PrintRawText() const;
 
+
+  const std::string_view& Data(size_t index) const;
+
+  size_t Size() const;
+
   /*!
    * @return iterator to begin of string buffer
    */
