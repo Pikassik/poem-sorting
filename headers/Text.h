@@ -48,6 +48,8 @@ class Text {
 
   const std::string_view& Data(size_t index) const;
 
+  const std::string_view& At(size_t index) const;
+
   size_t Size() const;
 
   /*!

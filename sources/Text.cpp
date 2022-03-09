@@ -41,6 +41,10 @@ const std::string_view& Text::Data(size_t index) const {
   return strings_[index];
 }
 
+const std::string_view& Text::At(size_t index) const {
+  return strings_.at(index);
+}
+
 size_t Text::Size() const {
   return strings_.size();
 }
